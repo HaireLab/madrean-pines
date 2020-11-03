@@ -1,8 +1,8 @@
 # madrean-pines
 
 ### Data and code in this repository were used to conduct analyses for the following paper:
-Haire, S.L., Villarreal, M.L., CortÃ©s MontaÃ±o, C., Flesch, A.D., Iniguez, J.M., Romo LeÃ³n, J.R., 
-and Sanderlin, J.S. (in review). Identifying climate refugia for Pinus spp. in topographic and bioclimatic environments of the Madrean Sky Islands of Mexico and the United States. < journal, volume, issue: pages, DOI >
+Sandra L. Haire, Miguel L. Villarreal, Citlali Cortés Montaño, Aaron D. Flesch, José M. Iniguez, José Raúl Romo León, 
+and Jamie S. Sanderlin. (in review). Identifying climate refugia for Pinus spp. in topographic and bioclimatic environments of the Madrean Sky Islands of Mexico and the United States. < journal, volume, issue: pages, DOI >
 
 Note: Spatial data outputs are available. < USGS Data Release url >
 
