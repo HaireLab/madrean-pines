@@ -1,12 +1,21 @@
 # madrean-pines
 
-### Data and code in this repository were used to conduct analyses for the following paper:
+### Data and code in this repository were used to conduct the analysis for the following paper:
 Sandra L. Haire, Miguel L. Villarreal, Citlali Cortés Montaño, Aaron D. Flesch, José M. Iniguez, José Raúl Romo León, 
 and Jamie S. Sanderlin. (in review). Identifying climate refugia for Pinus spp. in topographic and bioclimatic environments of the Madrean Sky Islands of Mexico and the United States. < journal, volume, issue: pages, DOI >
 
-Note: Spatial data outputs are available. < USGS Data Release url >
+Note: 
 
 ### Repository Contents
+
+#### Data
+
+Spatial data outputs are available. < USGS Data Release url > or < databasin.org location >
+
+Tabular data used to run the model scripts, below: 
+
+list of files, one for each species
+
 
 #### R scripts, models
 gbm.terrain.R--terrain only models, 5 species
@@ -28,6 +37,4 @@ predict.topo-rs.R--use the spatial layers to output predicted probability for ea
 
 sdm.kernels.R--apply a Gaussian kernel to the predicted probability maps to identify a gradient of high, medium and low probability. Use the output in manuscript figures.
 
-#### Data
 
-COMING SOON!!
