@@ -2,11 +2,11 @@
 
 ## Data and code in this repository were used to conduct the analysis for the following paper:
 Sandra L. Haire, Miguel L. Villarreal, Citlali Cortés Montaño, Aaron D. Flesch, José M. Iniguez, José Raúl Romo León, 
-and Jamie S. Sanderlin. (in review). Identifying climate refugia for Pinus spp. in topographic and bioclimatic environments of the Madrean Sky Islands of Mexico and the United States. < journal, volume, issue: pages, DOI >
+and Jamie S. Sanderlin. (in review). Climate refugia for Pinus spp. in topographic and bioclimatic environments of the Madrean Sky Islands of México and the United States. < journal, volume, issue: pages, DOI >
 
-Note: 
+Note: under development
 
-### Repository Contents (under development)
+### Repository Contents 
 
 ### Data
 
@@ -41,6 +41,7 @@ PinAri.us-mx-terrain.bio.csv
 PinDis.us-mx-terrain.bio.csv
 
 #### R scripts: models
+
 gbm.terrain.R--terrain only models, 5 species
 
 gbm.topo.climate.R--terrain-bioclimatic models, 5 species
