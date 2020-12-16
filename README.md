@@ -12,9 +12,7 @@ Note: under development
 
 Spatial data outputs are available. < USGS Data Release url > or < databasin.org location >
 
-Tabular data used to run the model scripts, below: 
-
-COMING SOON
+Tabular data used to run the model scripts (in folder: data/tab)
 
 #### Terrain + remote sensing predictors
 
