@@ -44,13 +44,13 @@ msp.utm<-projectRaster(msp, b)
 #### predict combo 1: top 4 terrain + NDVI spr + NDVI mons
 ## P. engelmannii
 ## stack the input data layers
-combo1.eng$gbm.call$predictor.names
+combo2.eng$gbm.call$predictor.names
 #[1] "srtm_30m_madrean"               "Terrain_Ruggedness_Index_.TRI."
 #[3] "Slope_Height"                   "Mid.Slope_Positon"             
 #[5] "SI_L5_NDVIspring_revised"       "SI_L5_NDVImonsoon_revised"
 s.eng<-stack(b[[6]], b[[9]], b[[7]], msp.utm, rs.b[[4]], rs.b[[3]])
 
-predict(s.eng, combo1.eng, type="response", n.trees=combo1.eng$gbm.call$best.trees, 
+predict(s.eng, combo2.eng, type="response", n.trees=combo2.eng$gbm.call$best.trees, 
         na.rm=FALSE, progress="text", filename="./data/raster/pineng.topo-ndvi.tif",
         format="GTiff", overwrite=TRUE)
 eng.p1<-raster("./data/raster/pineng.topo-ndvi.tif")
@@ -58,13 +58,13 @@ plot(eng.p1)
 
 ## P. strobiformis
 ## stack the input data layers
-combo1.str$gbm.call$predictor.names
+combo2.str$gbm.call$predictor.names
 #[1] "srtm_30m_madrean"               "Terrain_Ruggedness_Index_.TRI."
 #[3] "Slope_Height"                   "Catchment_Slope"               
 #[5] "SI_L5_NDVIspring_revised"       "SI_L5_NDVImonsoon_revised"
 s.str<-stack(b[[6]], b[[9]], b[[7]], b[[5]], rs.b[[4]], rs.b[[3]])
 
-predict(s.str, combo1.str, type="response", n.trees=combo1.str$gbm.call$best.trees, 
+predict(s.str, combo2.str, type="response", n.trees=combo2.str$gbm.call$best.trees, 
         na.rm=FALSE, progress="text", filename="./data/raster/pinstr.topo-ndvi.tif",
         format="GTiff", overwrite=TRUE)
 str.p1<-raster("./data/raster/pinstr.topo-ndvi.tif")
@@ -72,12 +72,12 @@ plot(str.p1)
 
 ## P. arizonica
 ## stack the input data layers
-combo1.ari$gbm.call$predictor.names
+combo2.ari$gbm.call$predictor.names
 #[[1] "srtm_30m_madrean"          "Aspect"                    "Slope_Height"             
 #[4] "Catchment_Area"            "SI_L5_NDVIspring_revised"  "SI_L5_NDVImonsoon_revised"
 s.ari<-stack(b[[6]], b[[3]], b[[7]], b[[4]], rs.b[[4]], rs.b[[3]])
 
-predict(s.ari, combo1.ari, type="response", n.trees=combo1.ari$gbm.call$best.trees, 
+predict(s.ari, combo2.ari, type="response", n.trees=combo2.ari$gbm.call$best.trees, 
         na.rm=FALSE, progress="text", filename="./data/raster/pinari.topo-ndvi.tif",
         format="GTiff", overwrite=TRUE)
 ari.p1<-raster("./data/raster/pinari.topo-ndvi.tif")
@@ -85,12 +85,12 @@ plot(ari.p1)
 
 ## P. discolor
 ## stack the input data layers
-combo1.dis$gbm.call$predictor.names
+combo2.dis$gbm.call$predictor.names
 #[[1] "srtm_30m_madrean"          "Aspect"                    "Catchment_Slope"          
 #[4] "Slope_Height"              "SI_L5_NDVIspring_revised"  "SI_L5_NDVImonsoon_revised"
 s.dis<-stack(b[[6]], b[[3]], b[[5]], b[[7]], rs.b[[4]], rs.b[[3]])
 
-predict(s.dis, combo1.dis, type="response", n.trees=combo1.dis$gbm.call$best.trees, 
+predict(s.dis, combo2.dis, type="response", n.trees=combo2.dis$gbm.call$best.trees, 
         na.rm=FALSE, progress="text", filename="./data/raster/pindis.topo-ndvi.tif",
         format="GTiff", overwrite=TRUE)
 dis.p1<-raster("./data/raster/pindis.topo-ndvi.tif")
@@ -98,13 +98,13 @@ plot(dis.p1)
 
 ## P. chihuahuana
 ## stack the input data layers
-combo1.chi$gbm.call$predictor.names
+combo2.chi$gbm.call$predictor.names
 #[[1]"srtm_30m_madrean"               "Slope_Height"                  
 #[3] "Valley_Depth"                   "Terrain_Ruggedness_Index_.TRI."
 #[5] "SI_L5_NDVIspring_revised"       "SI_L5_NDVImonsoon_revised"
 s.chi<-stack(b[[6]], b[[7]], b[[10]], b[[9]], rs.b[[4]], rs.b[[3]])
 
-predict(s.chi, combo1.chi, type="response", n.trees=combo1.chi$gbm.call$best.trees, 
+predict(s.chi, combo2.chi, type="response", n.trees=combo2.chi$gbm.call$best.trees, 
         na.rm=FALSE, progress="text", filename="./data/raster/pinchi.topo-ndvi.tif",
         format="GTiff", overwrite=TRUE)
 chi.p1<-raster("./data/raster/pinchi.topo-ndvi.tif")

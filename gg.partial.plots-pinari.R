@@ -16,7 +16,7 @@
 ##
 ## Notes:
 ## This is a sample script for Pinus arizonica
-## First run gbm models (topo-climate), then run versions of this script, edited for each species
+## First run gbm models (gbm.topo.climate.R), then run versions of this script, edited for each species
 ## Next assemble the partial dependency plots for manuscript figure using assemble.pdp.R
 ## 
 ##---------------------------------------------------------------
