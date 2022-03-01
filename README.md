@@ -1,14 +1,17 @@
 # madrean-pines
 
 ## Data and code in this repository were used to conduct the analysis for the following paper:
-Sandra L. Haire, Miguel L. Villarreal, Citlali Cortés Montaño, Aaron D. Flesch, Jose M. Iniguez, José Raul Romo-Leon, 
+Sandra L. Haire, Miguel L. Villarreal, Citlali Cortés Montaño, Aaron D. Flesch, Jose M. Iniguez, Jose Raul Romo-Leon, 
 and Jamie S. Sanderlin. (2022). Climate refugia for Pinus spp. in topographic and bioclimatic environments of the Madrean Sky Islands of México and the United States. Plant Ecology (accepted).
 
 ### Repository Contents 
 
 ### Data
 
-Spatial data outputs are available. < USGS Data Release url > 
+Spatial data outputs are available. 
+
+Haire, S.L and Villarreal, M.L., 2022, Pine species distribution maps of the Madrean Sky Islands, United States and México: U.S. Geological Survey data release, https://doi.org/10.5066/P9CLBAF7
+
 and on Data Basin: https://databasin.org/galleries/b27fbb9c42b849fe9029827095449d07/
 
 Tabular data used to run the model scripts (in folder: data/tab)
